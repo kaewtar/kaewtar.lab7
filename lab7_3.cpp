@@ -2,10 +2,11 @@
 #include<cmath>
 using namespace std;
 
-int adiff(int a , int b);{
-  
-     return (a%360) - (b%360);
-
+int adiff(int a , int b)
+{
+  int c = abs(a - b) % 360 ;
+   if(c>180)c = 360-c;
+  return c;
 }
   
 
